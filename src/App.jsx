@@ -19,10 +19,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          {/* <Route element={<ProtectedRoute />}> */}
+          <Route element={<ProtectedRoute />}>
             <Route path="/post" element={<Post />} />
             <Route path="/update/:id" element={<Update />} />
-          {/* </Route> */}
+          </Route>
         </Routes>
       </Router>
     </AuthProvider>
